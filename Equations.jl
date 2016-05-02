@@ -10,7 +10,7 @@ function sigmoid_centered(a, theta)
 end
 
 function step_down(duration, amplitude)
-    return t -> t < duration ? amplitude * ones(2) : zeros(2)
+    return t -> t .< duration ? amplitude * ones(2) : zeros(2)
 end
 
 end
