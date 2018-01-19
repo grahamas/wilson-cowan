@@ -1,7 +1,7 @@
 module Equations
 
 function sigmoid(x)
-    1. ./ (1. + exp(-x))
+    return 1. ./ (1. + exp(-x))
 end
 
 function sigmoid_centered(a, theta)
